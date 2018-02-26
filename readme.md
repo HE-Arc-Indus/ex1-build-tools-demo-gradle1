@@ -2,14 +2,18 @@
 
 ## Se positionner dans le dossier dans lequel créer le projet
 ``` cd C:\Users\normand.paratte\Documents\JavaProjects ```
-## 
-> gradle init --type java-application --> Initialisation du projet
-Création(ou copie) des classes --> Attention aux packages (sous-dossiers)
-settings.gradle --> Nom du projet --> rootProject.name = 'JavaProjects'
-// Define the main class for the application
-build.gradle --> Définir la classe principale --> mainClassName = 'ex1.MesPersonnes'
+## Initialisation du projet (Création des dossiers et fichiers de base)
+``` gradle init --type java-application ```
 
-gradlew build --> Compilation
-gradlew run --> Lance l'exécutable
+## Création(ou copie) des classes --> Attention aux packages (sous-dossiers)
 
-gradlew tasks --> Toutes les commandes possibles
+## Affectation des paramètres dans le fichier settings.gradle
+```  Nom du projet : rootProject.name = 'JavaProjects' ```
+
+## Définir la classe principale dans le fichier build.gradle
+``` mainClassName = 'ex1.MesPersonnes'```
+
+## Compilation
+``` gradlew build ```
+## Lance l'exécutable
+``` gradlew run ```
